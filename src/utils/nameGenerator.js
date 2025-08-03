@@ -12,14 +12,19 @@ const lastNames = {
  rogue: ["Shadowstep", "Nightrunner", "Lockwhisper", "Silversneak", "Darkveil", "Quickhands", "Shadecloak", "Whisperthorn", "Pickpocketson", "Sneakybeans", "Flipdagger", "Skitterfoot"],
 
  warlock: ["Doomwhisper", "Gravebind", "Voidcaller", "Hexborn", "Nightchant", "Soulmark", "Curseblood", "Ebonflare", "Wigglescourge", "Snarlwand", "Gloombottom", "Dreadpickle"],
-}
+};
 
 export const generateName  = (race, classType) => {
     //first save the arrays of names for the specified race and class type into a variable and then include a string literal as a fallback option
     let first = firstNames[race] || ["NameLess"];
     let last = lastNames[classType] || ["Nobody"];
+
+     console.log("first.length = ", first.length);
+    console.log("last.length = ", last.length);
+
     //then randomly select one of them
-    let firstName = first[Math.floor(Math.random * first.length)];
-    let lastName = last[Math.floor(Math.random * last.length)];
+    let firstName = first[Math.floor(Math.random() * first.length)];
+    let lastName = last[Math.floor(Math.random() * last.length)];
+   
     return `${firstName} ${lastName}`;
 }
