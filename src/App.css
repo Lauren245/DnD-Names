@@ -82,3 +82,9 @@ button {
 button:hover {
   background-color: #5d3f2b;
 }
+
+@media (max-width: 768px) {
+  label {
+    max-width: 100%;   
+  }
+}
