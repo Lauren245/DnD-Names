@@ -1,7 +1,7 @@
 # Tabletop Character Name Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) - https://opensource.org/licenses/MIT
 
-This is a simple React application that generates random character names based on the selected Dungeons & Dragons race and class. It also provides a reroll button to generate a new name with the same parameters.
+This is a simple React application that generates random character names based on the selected Dungeons & Dragons race and class. It also provides a reroll button to generate a new name with the same parameters. Currently, there are around 7,056 possible name combinations.
 
 **visit [https://tabletop-character-names.onrender.com/](https://tabletop-character-names.onrender.com/) to use the deployed version of the app.**
 
